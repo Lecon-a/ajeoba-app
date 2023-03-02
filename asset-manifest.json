@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/ajeoba-app/static/css/main.902a7214.css",
-    "main.js": "/ajeoba-app/static/js/main.068b5617.js",
-    "static/js/787.19419ea0.chunk.js": "/ajeoba-app/static/js/787.19419ea0.chunk.js",
-    "static/media/logo.svg": "/ajeoba-app/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
+    "main.css": "/ajeoba-app/static/css/main.b50c83bf.css",
+    "main.js": "/ajeoba-app/static/js/main.d3379bf2.js",
     "index.html": "/ajeoba-app/index.html",
-    "main.902a7214.css.map": "/ajeoba-app/static/css/main.902a7214.css.map",
-    "main.068b5617.js.map": "/ajeoba-app/static/js/main.068b5617.js.map",
-    "787.19419ea0.chunk.js.map": "/ajeoba-app/static/js/787.19419ea0.chunk.js.map"
+    "main.b50c83bf.css.map": "/ajeoba-app/static/css/main.b50c83bf.css.map",
+    "main.d3379bf2.js.map": "/ajeoba-app/static/js/main.d3379bf2.js.map"
   },
   "entrypoints": [
-    "static/css/main.902a7214.css",
-    "static/js/main.068b5617.js"
+    "static/css/main.b50c83bf.css",
+    "static/js/main.d3379bf2.js"
   ]
 }
