@@ -10,7 +10,7 @@ const NavBar = () => {
       <nav className="navbar bg-white fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Ajeoba
+            <h2>Ajeoba</h2>
           </Link>
           <button
             className="navbar-toggler"
@@ -27,7 +27,7 @@ const NavBar = () => {
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div className="offcanvas-header">
+            <div className="offcanvas-header mt-4 mb-0 px-4">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 Ajeoba
               </h5>
@@ -38,11 +38,11 @@ const NavBar = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="offcanvas-body">
-              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <div className="offcanvas-body mt-0">
+              <ul className="navbar-nav justify-content-end flex-grow-1 mt-0 p-0">
                 <li className="nav-item">
                   <Link
-                    className="dropdown-item nav-link px-4 py-3 d-flex flex-column"
+                    className="dropdown-item nav-link px-2 py-3 d-flex flex-column"
                     to="/overview"
                     aria-current="page"
                   >
@@ -51,7 +51,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -60,7 +60,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -69,7 +69,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -78,7 +78,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -87,7 +87,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -97,7 +97,7 @@ const NavBar = () => {
                 <HorizontalDivider />
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -106,7 +106,7 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                   <Link
-                    className="nav-link px-4 py-3 d-flex flex-column"
+                    className="nav-link px-2 py-3 d-flex flex-column"
                     to="/tickets"
                     aria-current="page"
                   >
@@ -114,9 +114,9 @@ const NavBar = () => {
                   </Link>
                 </li>
               </ul>
-              <div className="row d-flex flex-column gap-30">
-                <CiSearch className="fs-4" />
-                <VscBellDot className="fs-4" />
+              <div className="d-flex p-3 gap-30">
+                <CiSearch className="fs-2" />
+                <VscBellDot className="fs-2" />
               </div>
             </div>
           </div>
