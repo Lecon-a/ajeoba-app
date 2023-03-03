@@ -33,7 +33,6 @@ const data = {
       borderColor: "rgba(100, 100, 200, 0.5)",
       backgroundColor: "rgba(100, 100, 250, 0.5)",
       tension: 0.5,
-      fill: true,
     },
     {
       label: "Yesterday",
@@ -42,7 +41,6 @@ const data = {
       borderColor: "rgba(150, 150, 150, 0.25)",
       backgroundColor: "rgba(150, 150, 150, 0.25)",
       tension: 0.5,
-      fill: true,
     },
   ],
 };
