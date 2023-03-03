@@ -15,7 +15,7 @@ const Overview = () => {
       <Header activeTab="Overview" />
       <div className="overview-wrapper">
         <div className="row">
-          <div className="d-flex gap-40">
+          <div className="d-flex gap-40 option-scroll">
             <Card title="Unresolved" value={60} />
             <Card title="Overdue" value={16} />
             <Card title="Open" value={43} />

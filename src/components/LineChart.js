@@ -48,7 +48,7 @@ const data = {
 const LineChart = () => {
   return (
     <>
-      <Line data={data} />
+      <Line className="chart-height" data={data} />
     </>
   );
 };
