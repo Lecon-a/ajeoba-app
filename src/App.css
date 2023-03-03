@@ -331,6 +331,28 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Ticket page */
 
+.row-tickets {
+  contain: content;
+  display: flex;
+  flex-direction: row;
+}
+
+.row-tickets:not(:last-child){
+  border-bottom: 1px solid var(--color-DFE0EB);
+}
+
+.group-customer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.group-customer-details {
+  display: flex;
+  flex-direction: row;
+}
+
+
 .all-tickets-border {
   border: 1px solid var(--color-DFE0EB);
   border-radius: 10px;
@@ -391,7 +413,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .option-scroll .card {
-    width: fit-content!important;
+    width: 150px!important;
     height: 110px!important;
   }
 
@@ -421,11 +443,52 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 16px!important;
   }
 
-  .ticket-scroll {
-    overflow-x: scroll;
+  /* Ticket page */
+
+  .row-tickets {
+    padding-left: 8px;
   }
 
+.row-tickets:not(:last-child){
+  border-bottom: 1px solid var(--color-DFE0EB);
 }
+
+.group-customer {
+  flex-direction: column;
+}
+
+.group-customer > div {
+  width: 100%!important;
+  box-sizing: border-box;
+}
+
+.ticket-details, .group-customer-details{
+  gap: 45px;
+  padding-left: 30px;
+}
+
+.p {
+  width: 80%!important;
+}
+
+.size-fs {
+  font-size: 24px;
+}
+
+.size-h {
+  font-size: 18px;
+}
+
+.group-size {
+  gap: 23px!important;
+}
+
+.group-size .gap-20 {
+  gap: 10px;
+}
+
+}
+
 
 @media screen and (min-width: 620px) {
   .nav-hide {
