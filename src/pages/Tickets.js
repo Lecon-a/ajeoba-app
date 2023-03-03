@@ -15,7 +15,7 @@ const Tickets = () => {
       <div className="ticket-wrapper">
         <div className="row scroll">
           <div className="col-12 all-tickets-border">
-            <div className="w-100 p-5 d-flex justify-content-between align-items-center">
+            <div className="this w-100 p-5 d-flex justify-content-between align-items-center">
               <h3>All tickets</h3>
               <div className="d-flex align-items-center gap-60 group-size">
                 <div className="d-flex align-items-center gap-20">

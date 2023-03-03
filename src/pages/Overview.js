@@ -14,7 +14,7 @@ const Overview = () => {
       <Meta title="Overiew" />
       <Header activeTab="Overview" />
       <div className="overview-wrapper">
-        <div className="row">
+        <div className="row scroll">
           <div className="d-flex gap-40 option-scroll">
             <Card title="Unresolved" value={60} />
             <Card title="Overdue" value={16} />

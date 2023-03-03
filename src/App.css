@@ -398,23 +398,29 @@ h1, h2, h3, h4, h5, h6, p {
   .details-hide, .sidebar-hide {
     display: none;
   }
-
-  .overview-wrapper {
-    width: 100%;
-    margin-top: 10px;
-  }
   
   .option-scroll {
-    width: auto;
+    width: inherit;
     height: 120px;
-    padding: 5px;
-    gap: 8px;
-    overflow-y: scroll;
+    padding: 5px 0;
+    gap: 5px;
+    flex: row;
+    margin: 10px 0 0;
+    overflow-x: scroll;
   }
 
-  .option-scroll .card {
-    width: 150px!important;
+  .option-scroll > div {
+    width: 350px!important;
     height: 110px!important;
+    contain: content;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .option-scroll > div > h3,
+  .option-scroll > div > h6 {
+    width: fit-content;
   }
 
   .chart-height {
@@ -462,8 +468,24 @@ h1, h2, h3, h4, h5, h6, p {
   box-sizing: border-box;
 }
 
-.ticket-details, .group-customer-details{
+.group-customer .ticket-details {
   gap: 45px;
+  padding-left: 30px;
+  border-bottom: 1px solid var(--color-DFE0EB);
+  margin-bottom: 4px;
+}
+
+.all-tickets-border .this {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.all-tickets-border .this > div {
+  margin-right: -20px;
+}
+
+.group-customer-details {
+  gap: 20px;
   padding-left: 30px;
 }
 
