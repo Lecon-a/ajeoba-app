@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import supportData from "./db/supportData";
 
 const Support = () => {
-  const supportElements = supportData.map((support) => {
+
+  const [supports] = useState(supportData)
+  const supportElements = supports.map((support) => {
     return (
       <div
         key={support.supportTitle}

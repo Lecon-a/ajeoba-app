@@ -4,13 +4,13 @@ import taskData from "./db/taskData";
 const Task = () => {
 
   const [taskState, setTaskState] = useState(false)
+  const [tasks] = useState(taskData)
 
   const handleChange = (name) => {
-    alert(name)
     setTaskState(prevTaskState => !prevTaskState)
   }
 
-  const taskElements = taskData.map((task, index) => {
+  const taskElements = tasks.map((task, index) => {
     return (
       <div
         key={`task-${index}`}

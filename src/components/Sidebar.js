@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdSettings } from "react-icons/io";
 import { MdSubscriptions } from "react-icons/md";
 import HorizontalDivider from "./HorizontalDivider";
 // dummy data
-import tabs from "./db/sidebarTabs";
+import menus from "./db/sidebarTabs";
 
 const Sidebar = () => {
+
+  const [tabs] = useState(menus)
+
   const handleClick = (e) => {
     document.querySelectorAll(".links").forEach((link) => {
       link.classList.remove("active");
