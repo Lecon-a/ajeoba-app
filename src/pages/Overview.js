@@ -4,11 +4,14 @@ import Card from "../components/Card";
 import HorizontalDivider from "../components/HorizontalDivider";
 import VerticalDivider from "../components/VerticalDivider";
 import TaskCard from "../components/TaskCard";
+import SupportCard from "../components/SupportCard";
 import LineChart from "../components/LineChart";
+import Meta from "../components/Meta";
 
 const Overview = () => {
   return (
     <>
+      <Meta title="Overiew" />
       <Header activeTab="Overview" />
       <div className="overview-wrapper">
         <div className="row">
@@ -24,20 +27,10 @@ const Overview = () => {
         <div className="row">
           <div className="col-12 d-flex chart">
             <div className="chart-card">
-              <div className="trend-title d-flex justify-content-between p-4">
+              <div className="trend-title d-flex justify-content-left p-4">
                 <div className="p-2">
                   <h3>Today's trends</h3>
                   <p>as of 25 May 2019, 09:41 PM</p>
-                </div>
-                <div className="d-flex align-items-center gap-30">
-                  <div className="d-flex align-items-center gap-12 present-trend">
-                    <HorizontalDivider width="15" />
-                    <span>Today</span>
-                  </div>
-                  <div className="d-flex align-items-center gap-12 past-trend">
-                    <HorizontalDivider width="15" />
-                    <span>Yesterday</span>
-                  </div>
                 </div>
               </div>
               <div className="trend-chart">
@@ -61,7 +54,7 @@ const Overview = () => {
       </div>
       <div className="summary-wrapper">
         <div className="row gap-40">
-          <TaskCard />
+          <SupportCard />
           <TaskCard />
         </div>
       </div>

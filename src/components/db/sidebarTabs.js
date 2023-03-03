@@ -1,6 +1,7 @@
 import { FaTicketAlt, FaLightbulb, FaChartPie } from "react-icons/fa";
 import { IoIosPeople } from 'react-icons/io';
 import { SiBookstack } from "react-icons/si";
+import { MdSupportAgent } from "react-icons/md";
 
 const tabs = [
   {
@@ -21,7 +22,7 @@ const tabs = [
   },
   {
     title: "agents",
-    image: <FaTicketAlt className="fs-3" />,
+    image: <MdSupportAgent className="fs-3" />,
   },
   {
     title: "articles",

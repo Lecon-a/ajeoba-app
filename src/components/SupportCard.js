@@ -1,25 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Task from "./Task";
+import Support from "./Support";
 
-const TaskCard = () => {
-  
+const SupportCard = () => {
   return (
     <div className="task-card">
       <div className="taskcard-title d-flex justify-content-between p-3 align-items-center">
         <div>
-          <h3>Task</h3>
+          <h3>Unresolved tickets</h3>
           <p>
-            Today
+            Group <strong>Support</strong>
           </p>
         </div>
         <Link>View details</Link>
       </div>
       <div className="taskcard-details">
-        <Task />
+        <Support />
       </div>
     </div>
   );
 };
 
-export default TaskCard;
+export default SupportCard;

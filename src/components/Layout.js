@@ -7,7 +7,7 @@ const Layout = () => {
     <>
       <div className="layout-wrapper">
         <div>
-          <div className="row layout-inner-wrapper">
+          <div className="row w-100 layout-inner-wrapper">
             <div className="sidebar-wrapper p-0">
               <Sidebar />
             </div>
