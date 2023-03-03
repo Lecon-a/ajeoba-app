@@ -14,7 +14,7 @@ const Tickets = () => {
       <Meta title="Tickets" />
       <Header activeTab="Tickets" />
       <div className="ticket-wrapper">
-        <div className="row">
+        <div className="row scroll">
           <div className="col-12 all-tickets-border">
             <div className="w-100 p-5 d-flex justify-content-between align-items-center">
               <h3>All tickets</h3>
@@ -29,39 +29,41 @@ const Tickets = () => {
                 </div>
               </div>
             </div>
-            <div className="ordered-ticket d-flex align-items-center justify-content-left px-4 py-2">
-              <div className="ticket-details">Ticket details</div>
-              <div className="ticket-customer-name">Customer name</div>
-              <div className="ticket-date">Date</div>
-              <div className="ticket-priority">Priority</div>
-              <div className="ticket-three-dots">
-                <BsThreeDotsVertical className="fs-3 hide" />
+            <div className="row tickets-scroll">
+              <div className="ordered-ticket d-flex align-items-center justify-content-left px-4 py-2">
+                <div className="ticket-details">Ticket details</div>
+                <div className="ticket-customer-name">Customer name</div>
+                <div className="ticket-date">Date</div>
+                <div className="ticket-priority">Priority</div>
+                <div className="ticket-three-dots">
+                  <BsThreeDotsVertical className="fs-3 hide" />
+                </div>
               </div>
-            </div>
-            <HorizontalDivider width="100" />
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
-            </div>
-            <div className="ordered-ticket d-flex align-items-center px-4 py-3">
-              <TicketCard />
+              <HorizontalDivider width="100" />
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
+              <div className="ordered-ticket d-flex align-items-center px-4 py-3">
+                <TicketCard />
+              </div>
             </div>
             <div className="w-100 p-5 d-flex justify-content-end align-items-center">
               <div className="d-flex align-items-center gap-60">

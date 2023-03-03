@@ -11,6 +11,50 @@ body {
   font-weight: bold;
 }
 
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 6px;
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: var(--color-3751FF);
+  border-color: var(--color-3751FF);
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+
 ul {
   padding: 0;
 }
@@ -21,10 +65,6 @@ ul, li {
 
 a {
   text-decoration: none;
-}
-
-.sunday {
-  border: 1px solid red;
 }
 
 .links {
@@ -347,7 +387,7 @@ h1, h2, h3, h4, h5, h6, p {
     height: 120px;
     padding: 5px;
     gap: 8px;
-    overflow-x: scroll;
+    overflow-y: scroll;
   }
 
   .option-scroll .card {
@@ -369,7 +409,7 @@ h1, h2, h3, h4, h5, h6, p {
   .sheet-wrapper div.col-12 {
     width: 100%;
     flex-direction: column;
-    margin: 0 4px;
+    margin: 0;
   }
 
   .sheet-wrapper .vertical-divider {
@@ -381,9 +421,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 16px!important;
   }
 
-  .chart-data .horizontal-divider {
-    width: 25%!important;
-    margin: 0 auto;
+  .ticket-scroll {
+    overflow-x: scroll;
   }
 
 }

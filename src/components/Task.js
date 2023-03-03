@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import taskData from "./db/taskData";
 
 const Task = () => {
+  const [taskState, setTaskState] = useState(false);
+  const [tasks] = useState(taskData);
 
-  const [taskState, setTaskState] = useState(false)
-  const [tasks] = useState(taskData)
-
-  const handleChange = (name) => {
-    setTaskState(prevTaskState => !prevTaskState)
-  }
+  const handleChange = () => {
+    setTaskState((prevTaskState) => !prevTaskState);
+  };
 
   const taskElements = tasks.map((task, index) => {
     return (
@@ -16,14 +15,19 @@ const Task = () => {
         key={`task-${index}`}
         className="task-divider taskcard-title d-flex justify-content-between p-3 align-items-center"
       >
-        <div className="d-flex align-items-center gap-12">
+        <div className="d-flex align-items-center gap-30">
           {index > 0 && (
-            <input
-              name={`task-${index}`}
-              type="checkbox"
-              value={taskState}
-              onChange={() => handleChange(`task-${index}`)}
-            />
+            <div className="round">
+              <input
+                className="task-checkbox"
+                name={`task-${index}`}
+                type="checkbox"
+                value={taskState}
+                id={`task-${index}`}
+                onChange={handleChange}
+              />
+              <label htmlFor={`task-${index}`} id={`task-${index}`} />
+            </div>
           )}
           <p>{task.taskTitle}</p>
         </div>

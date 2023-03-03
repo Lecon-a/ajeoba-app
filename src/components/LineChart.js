@@ -29,7 +29,7 @@ const data = {
     {
       label: "Today",
       data: [45, 34, 23, 54, 34, 26, 44],
-      borderWidth: 3,
+      borderWidth: 2,
       borderColor: "rgba(100, 100, 200, 0.5)",
       backgroundColor: "rgba(100, 100, 250, 0.5)",
       tension: 0.5,
@@ -37,9 +37,9 @@ const data = {
     {
       label: "Yesterday",
       data: [45, 54, 34, 26, 34, 23, 44],
-      borderWidth: 3,
-      borderColor: "rgba(150, 150, 150, 0.25)",
-      backgroundColor: "rgba(150, 150, 150, 0.25)",
+      borderWidth: 2,
+      borderColor: "rgba(150, 150, 150, 0.5)",
+      backgroundColor: "rgba(150, 150, 150, 0.5)",
       tension: 0.5,
     },
   ],
