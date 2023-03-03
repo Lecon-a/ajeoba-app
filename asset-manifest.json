@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ajeoba-app/static/css/main.13179c23.css",
-    "main.js": "/ajeoba-app/static/js/main.8775218c.js",
+    "main.css": "/ajeoba-app/static/css/main.7fde05aa.css",
+    "main.js": "/ajeoba-app/static/js/main.0cb3ac6b.js",
     "index.html": "/ajeoba-app/index.html",
-    "main.13179c23.css.map": "/ajeoba-app/static/css/main.13179c23.css.map",
-    "main.8775218c.js.map": "/ajeoba-app/static/js/main.8775218c.js.map"
+    "main.7fde05aa.css.map": "/ajeoba-app/static/css/main.7fde05aa.css.map",
+    "main.0cb3ac6b.js.map": "/ajeoba-app/static/js/main.0cb3ac6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.13179c23.css",
-    "static/js/main.8775218c.js"
+    "static/css/main.7fde05aa.css",
+    "static/js/main.0cb3ac6b.js"
   ]
 }
