@@ -375,10 +375,32 @@ h1, h2, h3, h4, h5, h6, p {
 .hide {
   visibility: hidden;
 }
+
+.main-footer {
+  display: none;
+}
 /* Ticket page ends here */
 
 /* @media rules */
 @media screen and (max-width: 619px) {
+
+  .layout-inner-wrapper, .layout-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-footer {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 16px 0;
+    text-align: center;
+    font-style: italic;
+    margin: 8px 0 0;
+    background-color: var(--color-DFE0EB);
+    box-sizing: border-box;
+  }
 
   .layout-wrapper {
     margin: 60px 0 0;
@@ -395,18 +417,58 @@ h1, h2, h3, h4, h5, h6, p {
   box-sizing: border-box;
 }
 
+.overview-wrapper-m {
+  margin: 0 8px 0 8px;
+}
+
+.sheet-wrapper {
+  margin: 0 8px 0 0;
+}
+
+.sheet-wrapper .row {
+  margin: 0;
+  padding: 0;
+}
+
+.tc-divider {
+  display: none;
+}
+
+.chart-card {
+  border-bottom: 2px solid var(--color-DFE0EB);
+}
+
+.chart-data .card {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sheet-wrapper .row .chart {
+  width: 100%;
+}
+
+.sheet-wrapper .row > * {
+  width: fit-content;
+  box-sizing: border-box;
+}
+
   .details-hide, .sidebar-hide {
     display: none;
   }
   
   .option-scroll {
-    width: inherit;
+    display: flex;
+    flex-direction: row;
+    width: 100%!important;
     height: 120px;
     padding: 5px 0;
-    gap: 5px;
-    flex: row;
+    gap: 8px;
     margin: 10px 0 0;
-    overflow-x: scroll;
+    overflow-x: auto;
+    box-sizing: border-box;
   }
 
   .option-scroll > div {
@@ -507,6 +569,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .group-size .gap-20 {
   gap: 10px;
+}
+
+.tickets-scroll .ticket-details {
+  padding-left: 40px;
 }
 
 }

@@ -5,10 +5,9 @@ import Header from "./Header";
 const Main = () => {
   return (
     <>
-      <div>
-        <Header />
-        <Outlet />
-      </div>
+      <Header />
+      <Outlet />
+      <footer className="main-footer">Ajeoba&copy;2023</footer>
     </>
   );
 };

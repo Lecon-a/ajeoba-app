@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
       <div className="layout-wrapper">
-        <div className="row w-100 layout-inner-wrapper">
+        <div className="row w-100 layout-inner-wrapper m-0 p-0">
           <div className="sidebar-wrapper p-0 sidebar-hide">
             <Sidebar />
           </div>
